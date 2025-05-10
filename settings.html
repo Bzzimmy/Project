@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Advice Simulator</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <style>
+        /* Additional styles for settings page */
+        #settings-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 500px;
+            text-align: left;
+        }
+        #settings-container label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        #settings-container input[type=\"text\"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #settings-container button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #settings-container button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success-message {
+            background-color: #e6ffed;
+            border: 1px solid #34c759;
+            color: #22863a;
+        }
+        .error-message {
+            background-color: #ffebe6;
+            border: 1px solid #ff3b30;
+            color: #c92119;
+        }
+    </style>
+</head>
+<body>
+    <div id="settings-container">
+        <h1>Settings</h1>
+        
+        <label for="api-key-input">Gemini API Key:</label>
+        <input type="text" id="api-key-input" placeholder="Enter your Gemini API Key">
+        
+        <button id="save-api-key-btn">Save API Key</button>
+        <div id="save-status-message" class="message" style="display:none;"></div>
+
+        <p><a href="index.html">Back to Game</a></p>
+    </div>
+
+    <script src="src/js/settings.js" type="module"></script>
+</body>
+</html> 
